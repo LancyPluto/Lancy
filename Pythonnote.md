@@ -1,4 +1,4 @@
-# Python
+# -Python
 
 ## 一：Python程序格式-缩进-行注释-段注释
 
@@ -154,7 +154,57 @@ c.值：表示对象所存储的数据的信息。
 
 ![image-20240123213032313](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240123213032313.png)
 
-2.整数缓存问题：命令行模式下，python仅仅对**比较小的整数**对象进行缓存（范围为[-5,256]）缓存起来，因此上面的a和b都是同一个已被提前缓存的对象。文件模式下，**所有数字**都会被缓存 
+2.整数缓存问题：命令行模式下，python仅仅对**比较小的整数**对象进行缓存（范围为[-5,256]）缓存起来，因此上面的a和b都是同一个已被提前缓存的对象。*文件模式*（即写代码的界面）下，**所有数字**都会被缓存 
+
+![image-20240124130736638](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124130736638.png)
+
+## 十二：字符串-Unicode字符集-三种创建字符串的方式
+
+1.python的字符串是不可变的，我们无法对原字符串做任何修改
+
+2.可以用ord（）把字符转换成对应的Unicode码
+
+3.使用内置函数chr（）可以把十进制数字转换成对应的字符
+
+![image-20240124132454503](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124132454503.png)
+
+4.可以通过单引号或双引号创建字符串，例如：a=‘abc’，b=“sxf”。
+
+5.连续三个单引号或三个双引号，可以帮助我们创建多行字符串。并且在长字符串中会保留原始的格式
+
+![image-20240124132957459](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124132957459.png)
+
+![image-20240124133008428](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124133008428.png)
+
+## 十三：字符串-转义字符-字符串拼接-字符串复制-input获取键盘输入
+
+1.转义字符：
+
+![image-20240124133421299](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124133421299.png)
+
+2.字符串拼接： 如果‘+’两边都是字符串，则拼接。也可以将多个字符串放在一起实现拼接，例如：
+
+![image-20240124133936858](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124133936858.png)
+
+3.字符串复制：使用‘*’可以实现字符串复制
+
+4.不换行打印：python调用print会自动印一个换行符，如果不想自动换行。我们可以自己通过参数**end=“任意字符串”**，来实现末尾添加任何内容
+
+![image-20240124134354736](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124134354736.png)
+
+5.从控制台读取字符串：使用input（）从控制台读取键盘输入的内容（**注意：获取到的内容是字符串，即使输入的是数字，也会是字符串的形式**）
+
+![image-20240124134609976](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124134609976.png)
+
+## 十四：字符串-str（）-字符提取-replace（）替换-内存分析
+
+1.replace()实现字符串替换
+
+![image-20240124204358268](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124204358268.png)
+
+2.str（）可以帮助我们将其他数据类型转换为字符串。
+
+![ ](https://lytypora.oss-cn-guangzhou.aliyuncs.com/image-20240124204446493.png)
 
 
 
